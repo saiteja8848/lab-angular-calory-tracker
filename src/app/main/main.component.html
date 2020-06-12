@@ -1,0 +1,38 @@
+<div class="main">
+    <div id='search'>
+        <label for="search">Search</label><br>
+        <input type="search" [(ngModel)]="searchValue">
+    </div>
+
+    <div id='add'>
+        <button>Add New Food</button>
+        <div>
+            <label for="food-name">Name:</label>
+            <input type="text" [(ngModel)]="newFood.name">
+        </div>
+        <div>
+            <label for="caloriesCount">calories:</label>
+            <input type="text" [(ngModel)]="newFood.calories">
+        </div>
+        <div>
+            <label for="contact-name">Image:</label>
+            <input type="text" [(ngModel)]="newFood.image">
+        </div>
+        <button (click)="addFood(newFood)">Add Food</button>
+    </div>
+
+    <div id='calories' [style]="value">
+        <ul>
+            <li>{{a}} <br></li>
+        </ul>
+    </div>
+
+
+</div>
+
+<ul class="foodsList">
+    <li *ngFor="let food of foodsList">
+        <h3>{{food.name}} : {{food.calories}}</h3>
+        <button (click)=add(food)>Add</button>
+    </li>
+</ul>

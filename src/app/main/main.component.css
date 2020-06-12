@@ -1,0 +1,37 @@
+.foodsList{
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+.foodsList>li{
+    border: 2px solid black;
+}
+main{
+  margin:20px;
+}
+
+#add,div{
+  margin:20px;
+}
+
+#search{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 25rem;
+
+}
+
+button{
+  background-color:orangered; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
